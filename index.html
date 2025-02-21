@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
         <title>キブンログ</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -15,7 +15,7 @@
             <form id="emoForm">
 
                 <!-- キブン選択 -->
-                <label for="category">いまのキブン</label>
+                <label for="category">いまのキブンは?</label>
                     <!-- カテゴリ選択 -->
                     <select id="category" name="category">
                         <option value="positive">ポジティブ</option>
@@ -28,11 +28,11 @@
                     </select><br><br>
                 
                 <!-- 強さ選択 -->
-                <label for="intensity">どのくらい</label><br>
+                <label for="intensity">どのくらい?</label><br>
                 <input type="range" id="intensity" name="intensity" min="0" max="100" value="10"><br><br>
                 
                 <!-- 出来事入力 -->
-                <label for="event">なにがあった</label><br>
+                <label for="event">どうして?</label><br>
                 <input type="text" id="event" name="event" maxlength="20" required><br><br>
 
                 <p id="saveMessage" class="hidden">きろくしました！</p>
