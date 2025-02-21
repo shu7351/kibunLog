@@ -183,21 +183,22 @@ tr:hover {
 
 /* スマホ対応 */
 @media (max-width: 600px) {
-    /* フォームの最大幅を少し小さくする */
-    form {
-        max-width: 90%;  /* 最大幅を画面の90%に */
-        padding: 15px;   /* パディングを少し調整 */
+    body {
+        font-size: 16px;  /* フォントサイズ調整 */
     }
-
-    /* ボタンサイズも調整 */
-    button {
-        padding: 10px 15px;
-        font-size: 1em;
-    }
-
-    /* フォントサイズ調整 */
     h1 {
-        font-size: 1.6em;  /* 小さめに */
-        margin-bottom: 15px;
+        font-size: 28px; /* タイトルのサイズ調整 */
+    }
+    form {
+        padding: 15px;
+    }
+    button {
+        width: 100%; /* ボタンをフル幅に */
+        font-size: 20px; /* ボタンの文字を大きく */
+    }
+    #logBtn {
+        width: 100%;  /* ログボタンをフル幅に */
+        padding: 15px 0;
+        font-size: 18px;
     }
 }
