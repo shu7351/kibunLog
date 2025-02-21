@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // グラフを描画
         if(graphType === 'frequency'){
-        drawGraph(filteredRecords);
-        }else{
         drawGraphCnt(filteredRecords);
+        }else{
+        drawGraph(filteredRecords);
         }
     }
 
