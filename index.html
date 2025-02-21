@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>キブンログ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>キブンログ</h1>
+
+        <!-- 入力フォーム -->
+        <div class="form">
+            <form id="emoForm">
+
+                <!-- キブン選択 -->
+                <label for="category">いまのキブン</label>
+                    <!-- カテゴリ選択 -->
+                    <select id="category" name="category">
+                        <option value="positive">ポジティブ</option>
+                        <option value="negative">ネガティブ</option>
+                        <option value="other">その他</option>
+                    </select><br><br>
+                    <!-- キブン選択 -->
+                    <label for="emotion"></label>
+                    <select id="emotion" name="emotion">
+                    </select><br><br>
+                
+                <!-- 強さ選択 -->
+                <label for="intensity">どのくらい</label><br>
+                <input type="range" id="intensity" name="intensity" min="0" max="100" value="10"><br><br>
+                
+                <!-- 出来事入力 -->
+                <label for="event">なにがあった</label><br>
+                <input type="text" id="event" name="event" maxlength="20" required><br><br>
+
+                <p id="saveMessage" class="hidden">きろくしました！</p>
+                <button type="submit">きろくする</button>
+            </form>
+
+        </div>
+
+        <!-- ログ画面に遷移 -->
+        <a href="log.html" id="logBtn">ふりかえる</a>
+
+        <script src="topJs.js"></script>
+    </body>
+</html>

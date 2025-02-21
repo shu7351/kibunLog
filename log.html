@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>キブンログ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>キブンログ</h1>
+
+        <!-- 月日切り替え -->
+        <div class="button-group">
+            <button id="today" class="toggle-btn">きょう</button>
+            <button id="month" class="toggle-btn">こんげつ</button>
+        </div>
+
+        <!-- グラフ表示-->
+        <div id="dataGraph"></div>
+        <div class="button-group">
+            <button id="frequency" class="toggle-btn">頻度</button>
+            <button id="strength" class="toggle-btn">つよさ</button>
+        </div>
+        <!-- 記録一覧表示-->
+        <div id="dataLog"></div>
+
+        <a href='index.html'>もどる</button><br><br><br>
+
+        <button id="clearAll" class="toggle-btn">ログ全削除</button>
+        <script src="logJs.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </body>
+</html>
